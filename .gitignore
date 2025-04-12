@@ -1,0 +1,66 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.swp
+*.swo
+*.bak
+
+# Django
+*.log
+db.sqlite3
+*.pot
+*.py[co]
+*.sqlite3
+*.sqlite3-journal
+
+# Environment
+.env
+*.env
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Node.js (if applicable)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+.nox/
+.cache/
+coverage.xml
+*.cover
+*.py,cover
+
+# Migrations
+migrations/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.pot
+*.py[co]
+*.sqlite3
+*.sqlite3-journal
