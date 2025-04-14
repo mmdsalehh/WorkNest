@@ -1,3 +1,4 @@
+from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -17,7 +18,8 @@ class RegisterView(APIView):
                 "message": "User registered successfully!",
                 "user": serializer.data,
                 "token": token.key,
-            }
+            },
+            status=status.HTTP_201_CREATED,
         )
 
 
