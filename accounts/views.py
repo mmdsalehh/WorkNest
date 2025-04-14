@@ -1,3 +1,4 @@
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -37,5 +38,20 @@ class LoginView(APIView):
                     "role": user.role,
                 },
                 "token": token.key,
+            }
+        )
+
+
+class ProfileView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        user = request.user
+        return Response(
+            {
+                "role": user.role,
+                "email": user.email,
+                "first_name": user.first_name,
+                "last_name": user.last_name,
             }
         )
