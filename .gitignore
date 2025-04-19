@@ -63,3 +63,6 @@ coverage.xml
 *.py[co]
 *.sqlite3
 *.sqlite3-journal
+
+# Static files
+media/
